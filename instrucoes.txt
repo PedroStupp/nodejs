@@ -1,0 +1,66 @@
+1. Iniciar um projeto node -> npm init -y
+2. Configurar a arquitetura do projeto
+
+nodeapi/
+│-- src/
+│   ├── controllers/
+│   │   ├── user.controller.ts
+│   ├── routes/
+│   │   ├── user.routes.ts
+│   ├── middlewares/
+│   │   ├── error.middleware.ts
+│   ├── models/
+│   │   ├── user.model.ts
+│   ├── services/
+│   │   ├── user.service.ts
+│   ├── app.ts
+│   ├── server.ts
+│-- package.json
+│-- tsconfig.json
+│-- .env
+
+
+Depedencias do projeto
+
+Depedencias de produção
+EXPRESS - framework para criar servidores e apis REST
+instalação - npm install express
+
+DOTENV - gerencia variaveis de ambiente
+instalação - npm install dotenv
+
+CORS - permite que a api seja acessada de diferentes origens
+instalação - npm install cors
+
+BODY-PARSER - converte o corpo da requisição para json automaticamente
+instalação - npm install body-parser
+
+EXPRESS-ASYNC-ERRORS - facilita o tratamento de erros em rotas assincronas
+instalação - npm install express-async-ERRORS
+
+*Depencias de desenvolvimento*
+
+TYPECRIPT -  compilador que converte ts para js
+instalação - npm install typescript --save-dev
+
+@types/node - define os tipos do node para que o typescript reconheca os modulos fs, path e http
+instalação - npm install @types/node
+
+@type/express - defino os tipos para o express para evitar erros ao usa-lo no typescript
+instalação - npm install @type/express
+
+TS-NODE - execute arquivos typescript diretamente
+instalação - npm install ts-node
+
+NODEMON - reinicia o servidor automaticamente quando reconhece uma alteração no codigo fonte
+instalação - npm install nodemon
+
+
+configurar o TYPECRIPT
+comando - npx tsc --init
+
+//configurar package.json
+"dev": "nodemon src src/server.ts"
+
+configurar o nodemon
+criar um arquivo na raiz chamado nodemon.json
