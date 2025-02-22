@@ -64,3 +64,18 @@ comando - npx tsc --init
 
 configurar o nodemon
 criar um arquivo na raiz chamado nodemon.json
+
+//instalar banco de dados
+knex é uma query builder
+
+npm install knex --save
+instalar o pacote para o tipo de banco que vai usar npm
+install mysql
+
+knex trabalha com migrations que são arquivos programaveis para criar tabelas
+
+para criar migration rode o comando
+npx knex migrate:make nome_migration
+
+create_users_table
+alter_users_table
